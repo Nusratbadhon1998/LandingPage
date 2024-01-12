@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 75%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+.section-title {
+    color: var(--Dark-01, #131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.section-para {
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 162.5%
+    ;
+}
+
+.primary-btn{
+    border-radius: 8px;
+background: #FF900E;
+width: 15%;
+height: 64px;
+color: #FFF;
+text-align: center;
+font-size: 1.1rem;
+font-weight: 600;
+border: 0;
+}
+
+/* <!--Header section style--> */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+}
+
+header .container:first-child {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    align-items: center;
+    padding-top: 40px;
+}
+
+nav>ul {
+    display: flex;
+    gap: 40px
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--Dark-02, #424242);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Banner Section */
+.banner-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.banner-container * {
+
+    margin-bottom: 30px;
+}
+
+.banner-container .section-title {
+    font-size: 4rem;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+section{
+    visibility: hidden;
+}
+
+
+
+
+/* Responsive design starts here */
+/* Media query */
+/* ******************************** */
+
+
+@media screen and (max-width: 575px) {
+
+
+    nav{
+        flex-direction: column;
+    }
+    nav .section-title{
+        margin-bottom: 30px;
+    }
+    .primary-btn{
+        width:30%
+    }
+
+    
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+
+
+    nav{
+        flex-direction: column;
+    }
+    nav .section-title{
+        margin-bottom: 30px;
+    }
+    .primary-btn{
+        width:30%
+    }
+
+    
+}
