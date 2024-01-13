@@ -107,11 +107,12 @@ li a {
 /* Team Section style starts here */
 /* ******************************* */
 
-.team {
+.team,
+.feature {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .team-img-container {
@@ -145,8 +146,52 @@ li a {
 /* Features Section style starts here */
 /* ******************************* */
 
+.feature * {
+    margin-bottom: 30px;
+}
 
+.feature-content-container {
+    width: 82%;
+}
 
+.feature-content-container .section-title {
+    width: 65%;
+    border-left: 5px solid orange;
+    padding-left: 30px;
+}
+
+.feature-content-container .card {
+    width: 72%;
+    margin-left: 25px;
+    border: 2rem;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+}
+
+.feature-img-container img {
+    width: 100%;
+}
+
+.feature-img-container .experience {
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    background: #FF900E;
+    width: 52%;
+    padding: 30px 10px 20px 10px;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+}
+
+.feature-img-container img {
+    margin-left: 30px;
+}
+
+.feature-img-container .experience h2 {
+    margin: 0;
+    font-size: 3.2rem;
+}
 
 
 
@@ -221,7 +266,8 @@ li a {
 
 
     nav,
-    .team {
+    .team,
+    .feature {
         flex-direction: column;
     }
 
@@ -231,7 +277,7 @@ li a {
 
     .primary-btn {
         width: 40%;
-        padding:0 10px;
+        padding: 0 10px;
     }
 
     .team-img-container {
@@ -248,6 +294,23 @@ li a {
     .team-content-container .section-para {
 
         width: fit-content
+    }
+
+    .feature-content-container .section-title {
+        text-align: center;
+        width: min-content;
+    }
+
+    .feature-img-container img {
+        margin: 0 auto;
+    }
+
+    .feature-img-container .experience {
+        width: 70%;
+        padding: 5;
+
+        margin: 0 auto;
+        right: 0;
     }
 
 }
