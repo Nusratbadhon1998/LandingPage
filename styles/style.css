@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* Common Shared Style */
+/* ************************************ */
 * {
     margin: 0;
     padding: 0;
@@ -24,23 +26,29 @@
     color: var(--Dark-03, #727272);
     font-size: 1rem;
     font-weight: 400;
-    line-height: 162.5%
-    ;
+    line-height: 162.5%;
 }
 
-.primary-btn{
+.primary-btn {
     border-radius: 8px;
-background: #FF900E;
-width: 15%;
-height: 64px;
-color: #FFF;
-text-align: center;
-font-size: 1.1rem;
-font-weight: 600;
-border: 0;
+    background: #FF900E;
+    width: 15%;
+    height: 64px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 0;
 }
+
+
+
+/* ******************************************* */
 
 /* <!--Header section style--> */
+
+/* NavBar Section */
+/* **************************************** */
 
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -70,7 +78,12 @@ li a {
     font-weight: 500;
 }
 
+/* ************************************** */
+
+
 /* Banner Section */
+/* ******************* */
+
 .banner-container {
     margin-top: 40px;
     text-align: center;
@@ -85,13 +98,116 @@ li a {
     font-size: 4rem;
 }
 
-.banner-img img{
+.banner-img img {
     width: 100%;
 }
 
-section{
-    visibility: hidden;
+/* *********************************** */
+
+/* Team Section style starts here */
+/* ******************************* */
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
 }
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+
+}
+
+.team-img-container img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.team-content-container .section-para {
+    width: 72%;
+    margin: 22px 0;
+}
+
+
+
+
+
+
+
+
+
+/* **************************************** */
+
+/* Features Section style starts here */
+/* ******************************* */
+
+
+
+
+
+
+
+
+/* **************************************** */
+
+/* Stats Section style starts here */
+/* ******************************* */
+
+
+
+
+
+
+
+
+/* **************************************** */
+
+
+
+/* Sponsor Section style starts here */
+/* ******************************* */
+
+
+
+
+
+
+
+
+/* **************************************** */
+
+
+/* Footer Section style starts here */
+/* ******************************* */
+
+
+
+
+
+
+
+
+/* **************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -104,31 +220,52 @@ section{
 @media screen and (max-width: 575px) {
 
 
-    nav{
+    nav,
+    .team {
         flex-direction: column;
     }
-    nav .section-title{
+
+    nav .section-title {
         margin-bottom: 30px;
     }
-    .primary-btn{
-        width:30%
+
+    .primary-btn {
+        width: 40%;
+        padding:0 10px;
     }
 
-    
+    .team-img-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    .team-content-container {
+        text-align: center;
+    }
+
+    .team-content-container .section-para {
+
+        width: fit-content
+    }
+
 }
 
 @media screen and (min-width: 576px) and (max-width:992px) {
 
 
-    nav{
+    nav {
         flex-direction: column;
     }
-    nav .section-title{
+
+    nav .section-title {
         margin-bottom: 30px;
     }
-    .primary-btn{
-        width:30%
+
+    .primary-btn {
+        width: 30%
     }
 
-    
+
 }
