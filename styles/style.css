@@ -100,6 +100,7 @@ li a {
 
 .banner-img img {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 /* *********************************** */
@@ -201,13 +202,15 @@ li a {
 
 /* Stats Section style starts here */
 /* ******************************* */
-.stats *{
+.stats * {
 
     margin-bottom: 30px;
 }
-.stats-content-container .section-para{
-    width:42%;
+
+.stats-content-container .section-para {
+    width: 42%;
 }
+
 .card-container {
     display: flex;
     justify-content: space-evenly;
@@ -235,11 +238,27 @@ li a {
 /* ******************************* */
 
 
+.sponsor {
+    text-align: center;
 
+}
 
+.sponsor * {
+    margin-bottom: 30px;
+}
 
+.sponsor .section-para {
+    width: 38%;
+    margin: 0 auto;
+}
 
-
+.sponsor-img-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 60px;
+}
 
 /* **************************************** */
 
@@ -251,7 +270,12 @@ li a {
 
 
 
-
+footer {
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 60px;
+}
 
 
 /* **************************************** */
@@ -286,7 +310,8 @@ li a {
     nav,
     .team,
     .feature,
-    .card-container {
+    .card-container,
+    .sponsor-img-container {
         flex-direction: column;
     }
 
@@ -306,7 +331,8 @@ li a {
 
     }
 
-    .team-content-container,.stats-content-container {
+    .team-content-container,
+    .stats-content-container {
         text-align: center;
     }
 
@@ -339,10 +365,16 @@ li a {
         margin: 0 auto;
         right: 0;
     }
-    .stats-content-container .section-para{
-        width:fit-content;
+
+    .stats-content-container .section-para {
+        width: fit-content;
         margin: 0 auto;
     }
+
+    .sponsor-img-container {
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 576px) and (max-width:992px) {
@@ -350,7 +382,8 @@ li a {
 
     nav,
     .feature,
-    .card-container {
+    .card-container,
+    .sponsor-img-container {
         flex-direction: column;
     }
 
@@ -386,12 +419,18 @@ li a {
         margin: 0 auto;
         right: 0;
     }
-    .stats-content-container .section-para{
-        width:fit-content;
+
+    .stats-content-container .section-para {
+        width: fit-content;
         margin: 0 auto;
     }
-    .stats-content-container{
+
+    .stats-content-container {
         text-align: center;
+    }
+
+    .sponsor-img-container {
+        align-items: center;
     }
 
 }
